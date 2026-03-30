@@ -1,13 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flaty User Login Form</title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
-    <h1> welcome to progrming world </h1>
+<body class="min-h-screen flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat relative" 
+      style="background-image: url('https://images.unsplash.com/photo-1502134249126-9f3755a50d78?auto=format&fit=crop&w=1920&q=80');">
+    
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <div class="relative z-10 w-full max-w-lg px-4">
+        <h1 class="text-white text-4xl md:text-5xl font-light text-center mb-10 tracking-wide">
+            Flaty User login Form
+        </h1>
+
+        <div class="bg-black/60 backdrop-blur-sm p-10 md:p-16 rounded-xl shadow-2xl">
+            <form class="space-y-10">
+                <div class="relative border-b border-gray-500 focus-within:border-cyan-400 transition-colors">
+                    <label class="block text-gray-300 text-sm mb-1">
+                        Enter Your Email <span class="text-yellow-500">*</span>
+                    </label>
+                    <input type="email" 
+                           class="w-full bg-transparent border-none text-white py-2 focus:outline-none focus:ring-0" 
+                           required>
+                </div>
+
+                <div class="relative border-b border-gray-500 focus-within:border-cyan-400 transition-colors">
+                    <label class="block text-gray-300 text-sm mb-1">
+                        Your Password <span class="text-yellow-500">*</span>
+                    </label>
+                    <input type="password" 
+                           class="w-full bg-transparent border-none text-white py-2 focus:outline-none focus:ring-0" 
+                           required>
+                </div>
+
+                <div class="text-left">
+                    <a href="#" class="text-gray-300 hover:text-cyan-400 text-sm transition-colors">
+                        Forgot Password?
+                    </a>
+                </div>
+
+                <button type="submit" 
+                        class="w-full bg-[#00e5ff] hover:bg-[#00b8cc] text-white font-bold py-4 rounded-md tracking-widest uppercase transition-all shadow-lg active:scale-95">
+                    Log In
+                </button>
+            </form>
+        </div>
+
+        <footer class="mt-10 text-gray-300 text-xs md:text-sm text-center tracking-wider">
+            © 2026 Flaty User login Form. All rights reserved | Design by <a href="#" class="hover:text-white underline">W3layouts</a>
+        </footer>
+    </div>
     <script src="first.js"></script>
 </body>
 </html>
+
+
+

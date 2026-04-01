@@ -414,5 +414,6 @@
 // let d =typeFour(3)
 // console.log(d);
 
-
-
+a = 10;
+b = 19;
+console.log(a-b);
